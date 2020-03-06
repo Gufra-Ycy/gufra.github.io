@@ -1,28 +1,19 @@
-#-------------------
-# Emacs
-*~
-*.elc
-[#]*[#]
-*[#]
-.[#]*
-
-
-#-------------------
-# OS junk
 .DS_Store
-._*
-.Spotlight-V100
-.Trashes
-Thumbs.db
+.idea/
+*.log
+*.iml
+yarn.lock
+package-lock.json
+node_modules/
 
-#-------------------
-# site
-_site
-.sass-cache
-.jekyll-metadata
-Gemfile.lock
-.jekyll-metadata
-.vscode
-.idea
-.DS_Store
+# Ignore optional external libraries
+source/lib/*
 
+# Track internal libraries & Ignore unused verdors files
+source/lib/font-awesome/less/
+source/lib/font-awesome/scss/
+!source/lib/font-awesome/
+
+!source/lib/anime.min.js
+
+!source/lib/velocity/
